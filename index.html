@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -34,26 +35,50 @@
             <section id="research">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
                             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                             <p>En plein centre ville ou en pleine nature</p>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 col-sm-7 col-xs-12">
                             <form>
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text"><i class="fas fa-map-marker-alt" style="color:black"></i></span>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-addon input-group-text">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                                  </svg>
+                                            </div>
+                                        </div>
+                                            <input type="search" class="form-control" id="citi_research">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button" id="texte-bouton">Rechercher</button>
+                                        </div>
                                     </div>
-                                        <input type="search" class="form-control" id="citi_research">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-success" type="button" id="texte-bouton">Rechercher</button>
-                                    </div>
-
                                 </div>
-                            </form>>
+                            </form>
+                        </div>
+                        <div class="col-md-8 col-sm-12 col-xs-12">
+                            <div id="filters">
+                                <p>Filtres</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id="infos">
+                    <!-- logo -->
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
+
+            <section id="accommodation_results">
+                <h1>Hébergements à Marseilles</h1>
+                <article class="accommodation_details">
+                    <!-- img -->
+                    <h2>Auberge la Cannebière</h2>
+                    <p>Nuit à partir de <strong></strong></p>
+
+                </article>
             </section>
         </main>
 
