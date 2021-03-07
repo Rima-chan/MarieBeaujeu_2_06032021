@@ -4,32 +4,38 @@ body {
     font-family: 'Raleway', sans-serif !important;
 }
 
-.container {
-    width:100%
-}
-
-
 @media (min-width:576px) {
     .container {
-        max-width: 540px;
+        width: 540px;
     }
+    
 }
 
 @media (min-width:768px) {
     .container {
-        max-width: 720px;
+        width: 720px;
     }
+
+    #header_logo {
+        width: 50%;
+    }
+
+    
 }
 
 @media (min-width:992px) {
     .container {
-        max-width: 960px;
+        width: 960px;
     }
+    
 }
 
 @media (min-width:1200px) {
     .container {
-        max-width: 1140px;
+        width: 1140px;
+    }
+    header {
+        width: auto;
     }
 }
 
@@ -37,3 +43,71 @@ body {
     width: 100%;
     height: auto;
   }
+
+
+
+/******** HEADER ***********/
+
+header {    
+    height: 100px;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.navigation_home {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: none;
+    width: 50%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding-top: 10%;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+#inscription_menu a:hover {
+    text-decoration: none;
+    color: #0065FC;
+}
+
+#navigation_menu {
+    justify-content: center;
+    font-weight: 500;
+    color: black;
+}
+
+#inscription_menu {
+    justify-content: center;
+    font-weight: 990;
+}
+
