@@ -8,19 +8,12 @@ body {
     .container {
         width: 540px;
     }
-    
 }
 
 @media (min-width:768px) {
     .container {
         width: 720px;
     }
-
-    #header_logo {
-        width: 50%;
-    }
-
-    
 }
 
 @media (min-width:992px) {
@@ -34,10 +27,14 @@ body {
     .container {
         width: 1140px;
     }
-    header {
-        width: auto;
-    }
 }
+
+@media (min-width:576px) {
+    .container {
+        width: 540px;
+    }   
+}
+
 
 .responsive {
     width: 100%;
@@ -78,7 +75,7 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin: none;
-    width: 50%;
+    text-align: left;
 }
 
 header nav ul li a {
@@ -93,6 +90,7 @@ header nav ul li a:hover {
     text-decoration: none;
     color: #0065FC;
     border-top: 2px #0065FC solid;
+    border-bottom: none;
 }
 
 #inscription_menu a:hover {
@@ -101,13 +99,15 @@ header nav ul li a:hover {
 }
 
 #navigation_menu {
-    justify-content: center;
     font-weight: 500;
     color: black;
+    justify-content: flex-end;
 }
 
 #inscription_menu {
-    justify-content: center;
     font-weight: 990;
+    padding-left:40px;
+   
 }
 
+/* HEADER FOR DEVICE */
