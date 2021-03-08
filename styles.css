@@ -118,7 +118,11 @@ header nav ul li a:hover {
 @media all and (max-width: 767px) {
     header {
         height:150px;
-        font-size: 2.5vmin;
+        font-size: 2.8vmin;
+    }
+
+    #logo_container {
+        height: 60%;
     }
 
     #inscription_menu {
@@ -126,7 +130,43 @@ header nav ul li a:hover {
     }
 
     #navigation_menu {
-        justify-content: space-around;
+        height: 40%;
+        padding-right: 0;
+        padding-left: 0;
     }
+
+    header nav {
+        width: 100vw;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li {
+        width: 50%;
+        text-align: center;
+        border-bottom:2px #F2F2F2 solid;
+        padding-bottom: 2%;
+    }
+
+    header nav ul li:hover {
+        border-bottom: 2px #0065FC solid;
+    }
+
+    header nav ul li a {
+        padding-right: auto;
+        padding-left: auto;
+        padding-top: 0;
+        width: h-100;
+        height: w-100;
+    }
+
+    header nav ul li a:hover {
+        border-top: none;
+        color: #0065FC;
+    }
+
     
 }
