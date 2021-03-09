@@ -37,137 +37,166 @@
             <section id="research">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="col-12">
                             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                             <p>En plein centre ville ou en pleine nature</p>
                         </div>
-                        <div class="col-md-5 col-sm-7 col-xs-12">
+                        <div class="col-12 col-md-7 col-sm-12 col-lg-5">
                             <form>
                                 <div class="form-group">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <div class="input-group-addon input-group-text">
-                                                  <span class="fa fa-map-marker-alt" style="color:black"></span> 
+                                            <div class="input-group-addon input-group-text" id="border_form">
+                                                  <span class="fa fa-map-marker-alt" style="color:black" id="map_icon"></span> 
                                             </div>
                                         </div>
-                                            <input type="search" class="form-control" id="citi_research">
+                                            <input type="search" class="form-control" id="cities_research" placeholder="Marseille, France">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button" id="texte-bouton">Rechercher</button>
+                                            <button class="btn btn-primary" type="button" id="text_button">Rechercher</button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="col-md-8 col-sm-12 col-xs-12">
-                            <div id="filters">
+                        <div class="col-12 col-md-12 col-sm-12 col-lg-9" id="filters">
                                 <p>Filtres</p>
-                                <button type="button" class="btn btn-outline-dark rounded" data-mdb-ripple-color="dark"><i class="fas fa-money-bill-wave"></i>Economique</button>
-                                <button type="button" class="btn btn-outline-dark rounded" data-mdb-ripple-color="dark"><i class="fas fa-child"></i>Familial</button>
-                                <button type="button" class="btn btn-outline-dark rounded" data-mdb-ripple-color="dark"><i class="fas fa-heart"></i>Romantique</button>
-                                <button type="button" class="btn btn-outline-dark rounded" data-mdb-ripple-color="dark"><i class="fas fa-dog"></i>Animaux autorisés</button>
-                            </div>
+                                <!-- Test 1 filtre -->
+                                    <div class="input-group">
+                                        <div class="input-group-prepend border_filter">
+                                            <div class="input-group-addon input-group-text" id="filter_circle_form">
+                                                <div class="fas fa-money-bill-wave fa-lg" style="color:#0065FC"></div>
+                                            </div>
+                                                <button type="button" class="btn" data-mdb-ripple-color="dark">Economique</button>
+                                            
+                                        </div>
+                                    </div>
+                                <!-- Test 2 filtre -->
+                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-child fa-lg"></i>Familial</button>
+
+                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-heart fa-lg"></i>Romantique</button>
+                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-dog fa-lg"></i>Animaux autorisés</button>
+                                    
                         </div>
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div id="infos">
-                                <i class="fas fa-info-circle" style="color:#0065FC;"></i>
+                        <div class="col-12" id="infos">
+                                <i class="fas fa-info-circle fa-lg"></i>
                                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
                         </div>
                     </div>
                 </div>
-                
             </section>
 
             <section id="accommodation_results">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="col-md-8 col-sm-12 col-lg-8 host_container" id="citie_hosts">
                             <div class="row">
                                 <div class="col-md-12">
                                     <h1>Hébergements à Marseilles</h1>
                                 </div>
-                                
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Auberge la cannebière.jpg" alt="auberge_cannebiere"  class="responsive">
+                                        <figure class="hosts_result">
+                                            <img src="pictures/Auberge la cannebière.jpg" alt="auberge_cannebiere"  class="responsive hosts_picture">
+                                        </figure>
                                         <h3>Auberge la Cannebière</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
                                         <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
                                         </div>
                                     </article>
+                                </div>
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel du port.jpg" alt="hotel_port" class="responsive">
+                                        <img src="pictures/Hotel du port.jpg" alt="hotel_port" class="responsive hosts_picture">
                                         <h3>Hotel du Port</h3>
                                         <p>Nuit à partir de 52€</p>
                                         <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
                                         </div>
                                     </article>
+                                </div>
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel les mouettes.jpg" alt="hotel_mouettes" class="responsive">
+                                        <img src="pictures/Hotel les mouettes.jpg" alt="hotel_mouettes" class="responsive hosts_picture">
                                         <h3>Hotel Les mouettes</h3>
                                         <p>Nuit à partir de 76€</p>
                                         <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
                                         </div>
                                     </article>
+                                </div>
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel de la mer.jpg" alt="hotel_mer" class="responsive">
+                                        <img src="pictures/Hotel de la mer.jpg" alt="hotel_mer" class="responsive hosts_picture">
                                         <h3>Hotel de la mer</h3>
                                         <p>Nuit à partir de 46€</p>
                                         <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
                                         </div>
                                     </article>
+                                </div>
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Auberge le panier.jpg" alt="auberge_panier" class="responsive">
+                                        <img src="pictures/Auberge le panier.jpg" alt="auberge_panier" class="responsive hosts_picture">
                                         <h3>Auberge Le Panier</h3>
                                         <p>Nuit à partir de <strong>23€</strong></p>
                                         <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
-                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#0065FC"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                                            <i class="fas fa-star" style="color:#F2F2F2"></i>
                                         </div>
                                     </article>
+                                </div>
+                                <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel chez Amina.jpg" alt="hotel_amina" class="responsive">
-                                        <h3>Hotel chez Amina</h3>
-                                        <p>Nuit à partir de 96€</p>
-                                        <div class="note">
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                            <i class="fas fa-star" style="color:#0065FC"></i>
-                                        </div>
+                                        <figure class="hosts_result">
+                                            <img src="pictures/Hotel chez Amina.jpg" alt="hotel_amina" class="responsive hosts_picture">
+                                        </figure>
+                                            <h3>Hotel chez Amina</h3>
+                                            <p>Nuit à partir de 96€</p>
+                                            <div class="note">
+                                                                <i class="fas fa-star" style="color:#0065FC"></i>
+                                                                <i class="fas fa-star" style="color:#0065FC"></i>
+                                                                <i class="fas fa-star" style="color:#0065FC"></i>
+                                                                <i class="fas fa-star" style="color:#0065FC"></i>
+                                                                <i class="fas fa-star" style="color:#0065FC"></i>
+                                            </div>
+                                        
                                     </article>
-                                <div class="col-md-12 col-sm-1 col-xs-12">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-sm-1 col-lg-4">
                                     <p>Afficher plus</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                    
+                        <div class="col-md-12 col-sm-12 col-lg-4 order-sm-first order-md-first order-lg-last" id="popular_hosts">
                             <h2>Les plus populaires</h2>
                             <i class="fas fa-chart-line fa-lg"></i>
                             <article class="popular_details">
-                                <img src="pictures/Hotel le soleil du matin.jpg" al="hotel_soleil" class="responsive"">
+                                <img src="pictures/Hotel le soleil du matin.jpg" alt="hotel_soleil" class="responsive">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                                 <div class="note_popular">
@@ -179,7 +208,7 @@
                                 </div>
                             </article>
                             <article class="popular_details">
-                                <img src="pictures/Chambre hotes.jpg" al="chambre_hotes" class="responsive">
+                                <img src="pictures/Chambre hotes.jpg" alt="chambre_hotes" class="responsive">
                                 <h3>Au coeur de l'eau Chabre d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
                                 <div class="note_popular">
@@ -191,7 +220,7 @@
                                 </div>
                             </article>
                             <article class="popular_details">
-                                <img src="pictures/hotel bleu et blanc.jpg" al="hotel_bleu" class="responsive">
+                                <img src="pictures/hotel bleu et blanc.jpg" alt="hotel_bleu" class="responsive">
                                 <h3>Hôtel Tout bleu et blanc</h3>
                                 <p>Nuit à partir de 68€</p>
                                 <div class="note_popular">

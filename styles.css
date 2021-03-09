@@ -35,18 +35,18 @@ body {
         width: 540px;
     }   
 }
-
-
 .responsive {
     width: 100%;
-    height: auto;
+    height: auto ;
+    display: block;
   }
+
 
 /******** HEADER ***********/
 
 header {    
     height: 100px;
-    font-size: 2vmin;
+    font-size: 0.9em;
 }
 
 #header_wrapper {
@@ -108,21 +108,113 @@ header nav ul li a:hover {
 
 #inscription_menu {
     font-weight: 990;
-    padding-left:40px;
-   
+}
+
+/****** MAIN *********/
+
+#research h1 {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#research p {
+    font-size: 0.9em;
+}
+
+#text_button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#border_form {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#cities_research::placeholder {
+    font-weight: 900;
+    color: #000;
+}
+
+#filters_aera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#filters_aera p {
+    color: #000;
+    font-weight: 900;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+/* test 1 filter */
+.border_filter {
+    border: 2px #d9d9d9 solid;
+    border-radius: 50px;   
+}
+
+#filter_circle_form {
+    border-radius:50px;
+    background: #DEEBFF;
+    border: 2px #DEEBFF solid;
+    position: relative;
+    z-index: 100;
+} 
+
+/* test 2 filter */
+
+#infos {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+#infos p {
+    padding-left: 10px;
 }
 
 
-/* HEADER FOR DEVICE */
+/* ACCOMMODATION */
+
+#citie_hosts {
+    background: #F2F2F2;
+    border-radius: 10px;
+}
+
+#popular_hosts {
+    background: #F2F2F2;
+    border-radius: 10px;
+}
+
+.accommodation_details .hosts_result {
+        min-height: 0;
+        min-width: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        height: 100%;
+}
+
+/******* DEVICE **********/
 
 @media all and (max-width: 767px) {
+
+/**** HEADER DEVICE *****/
+
     header {
         height:150px;
-        font-size: 2.8vmin;
+        font-size: 1em;
     }
 
     #logo_container {
         height: 60%;
+        padding-left: 30px;
     }
 
     #inscription_menu {
@@ -167,6 +259,24 @@ header nav ul li a:hover {
         border-top: none;
         color: #0065FC;
     }
+/**** RESEARCH DEVICE *****/
 
-    
+    #research h1 {
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #research p {
+        margin-bottom: 20px;
+    }
+/*** HOSTS DEVICE ***/
+    #citie_hosts {
+        border-radius: 0;
+    }
+
+    #popular_hosts {
+        border-radius: 0;
+    }
+
 }
