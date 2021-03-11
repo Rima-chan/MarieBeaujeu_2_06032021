@@ -14,14 +14,14 @@
     <body>
         <header>
             <div class="container h-100">
-                <div class="row h-100 w-100" id="header_wrapper">
-                    <div class="col-6 col-md-3 col-sm-6 col-lg-6" style="width: 50%" id="logo_container">
-                        <img src="pictures/Reservia logo.png" alt="logo" id="logo">
+                <div class="row h-100" id="header_wrapper">
+                    <div class="col-md-3 col-sm-6 col-lg-6" style="width: 50%" id="logo_container">
+                        <img src="pictures/Reservia_logo.png" alt="logo" id="logo" class="responsive">
                     </div>
-                    <div class="col-6 col-md-1 col-sm-6 col-lg-1 col order-0 order-lg-last order-md-last navigation_home" id="inscription_menu" style="width: 50%">
+                    <div class="col-md-1 col-sm-6 col-lg-1 col order-0 order-lg-last order-md-last navigation_home" id="inscription_menu" style="width: 50%">
                         <a href="#inscription">S'inscrire</a>
                     </div>
-                    <div class="col-12 col-md-8 col-sm-12 col-lg-5 navigation_home" id="navigation_menu">
+                    <div class="col-md-8 col-sm-12 col-lg-5 navigation_home" id="navigation_menu">
                         <nav>
                             <ul>
                                 <li><a href="#accommodation_results">Hébergements</a></li>
@@ -41,64 +41,79 @@
                             <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                             <p>En plein centre ville ou en pleine nature</p>
                         </div>
-                        <div class="col-12 col-md-7 col-sm-12 col-lg-5">
+                        <div class="col-md-7 col-sm-9 col-lg-4">
                             <form>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-addon input-group-text" id="border_form">
-                                                  <span class="fa fa-map-marker-alt" style="color:black" id="map_icon"></span> 
-                                            </div>
-                                        </div>
-                                            <input type="search" class="form-control" id="cities_research" placeholder="Marseille, France">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="button" id="text_button">Rechercher</button>
-                                        </div>
+                                <div id="search_form">
+                                    <div id="icon_area">
+                                        <span class="fa fa-map-marker-alt" style="color:black" id="map_icon"></span>
+                                    </div>
+                                    <div id="search_area">
+                                        <input type="search" class="form-control" id="cities_research" placeholder="Marseille, France">
+                                    </div>
+                                    <div id="button_area">
+                                        <button type="button" id="research_button"><i class="fas fa-search"></i></button>
                                     </div>
                                 </div>
                             </form>
                         </div>
-                        <div class="col-12 col-md-12 col-sm-12 col-lg-9" id="filters">
-                                <p>Filtres</p>
-                                <!-- Test 1 filtre -->
-                                    <div class="input-group">
-                                        <div class="input-group-prepend border_filter">
-                                            <div class="input-group-addon input-group-text" id="filter_circle_form">
-                                                <div class="fas fa-money-bill-wave fa-lg" style="color:#0065FC"></div>
-                                            </div>
-                                                <button type="button" class="btn" data-mdb-ripple-color="dark">Economique</button>
-                                            
-                                        </div>
-                                    </div>
-                                <!-- Test 2 filtre -->
-                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-child fa-lg"></i>Familial</button>
-
-                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-heart fa-lg"></i>Romantique</button>
-                                        <button type="button" class="btn btn-outline-dark" data-mdb-ripple-color="dark"><i class="fas fa-dog fa-lg"></i>Animaux autorisés</button>
-                                    
+                        <div class="col-md-12 col-sm-12 col-lg-9" id="filters">
+                            <p>Filtres</p>
+                            <button type="button" class="button_filter"><span class="icon_filter"><i class="fas fa-money-bill-wave fa-lg"></i></span>Economique</button>
+                            <button type="button" class="button_filter"><span class="icon_filter"><i class="fas fa-child fa-lg"></i></span>Familial</button>
+                            <button type="button" class="button_filter"><span class="icon_filter"><i class="fas fa-heart fa-lg"></i></span>Romantique</button>
+                            <button type="button" class="button_filter"><span class="icon_filter"><i class="fas fa-dog fa-lg"></i></span>Animaux autorisés</button>  
                         </div>
                         <div class="col-12" id="infos">
-                                <i class="fas fa-info-circle fa-lg"></i>
+                                <div id="infos_icon">
+                                    <i class="fas fa-info fa-sm"></i>
+                                </div>
                                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!-- TEST SECTION GRID -->
 
-            <section id="accommodation_results">
-                <div class="container">
+            <div class="container">
+                <section class="hosts_results_wrapper">
+                    <div class="hosts-item-1">
+                        <div class="sub-hosts-item-a">
+                            <h1>Hébergements à Marseilles</h1>
+                        </div>
+                        <article class="sub-hosts-item-b"> 
+                            <img src="pictures/Auberge_ cannebiere.jpg" alt="auberge_cannebiere"  class="responsive hosts_picture">
+                            <div class="hosts_details">
+                                <h2>Auberge la Cannebière</h2>
+                                <p>Nuit à partir de <strong>25€</strong></p>
+                                <div class="note">
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#0065FC"></i>
+                                    <i class="fas fa-star" style="color:#F2F2F2"></i>
+                                </div>
+                            </div>  
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+            <!--
+            <section>
+                <div class="container hosts_results">
                     <div class="row">
-                        <div class="col-md-8 col-sm-12 col-lg-8 host_container" id="citie_hosts">
+                        <div class="col-md-8 col-sm-12 col-lg-8">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-12 item_first_title">
                                     <h1>Hébergements à Marseilles</h1>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
-                                    <article class="accommodation_details">
+                                    <article class="accommodation_details item">
                                         <figure class="hosts_result">
-                                            <img src="pictures/Auberge la cannebière.jpg" alt="auberge_cannebiere"  class="responsive hosts_picture">
+                                            <img src="pictures/Auberge_ cannebiere.jpg" alt="auberge_cannebiere"  class="responsive hosts_picture">
                                         </figure>
                                         <h3>Auberge la Cannebière</h3>
                                         <p>Nuit à partir de <strong>25€</strong></p>
@@ -111,9 +126,10 @@
                                         </div>
                                     </article>
                                 </div>
+                                
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel du port.jpg" alt="hotel_port" class="responsive hosts_picture">
+                                        <img src="pictures/Hotel_port.jpg" alt="hotel_port" class="responsive hosts_picture">
                                         <h3>Hotel du Port</h3>
                                         <p>Nuit à partir de 52€</p>
                                         <div class="note">
@@ -127,7 +143,7 @@
                                 </div>
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel les mouettes.jpg" alt="hotel_mouettes" class="responsive hosts_picture">
+                                        <img src="pictures/Hotel_mouettes.jpg" alt="hotel_mouettes" class="responsive hosts_picture">
                                         <h3>Hotel Les mouettes</h3>
                                         <p>Nuit à partir de 76€</p>
                                         <div class="note">
@@ -141,7 +157,7 @@
                                 </div>
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Hotel de la mer.jpg" alt="hotel_mer" class="responsive hosts_picture">
+                                        <img src="pictures/Hotel_mer.jpg" alt="hotel_mer" class="responsive hosts_picture">
                                         <h3>Hotel de la mer</h3>
                                         <p>Nuit à partir de 46€</p>
                                         <div class="note">
@@ -155,7 +171,7 @@
                                 </div>
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
-                                        <img src="pictures/Auberge le panier.jpg" alt="auberge_panier" class="responsive hosts_picture">
+                                        <img src="pictures/Auberge_panier.jpg" alt="auberge_panier" class="responsive hosts_picture">
                                         <h3>Auberge Le Panier</h3>
                                         <p>Nuit à partir de <strong>23€</strong></p>
                                         <div class="note">
@@ -170,7 +186,7 @@
                                 <div class="col-12 col-md-4 col-sm-12 col-lg-4">
                                     <article class="accommodation_details">
                                         <figure class="hosts_result">
-                                            <img src="pictures/Hotel chez Amina.jpg" alt="hotel_amina" class="responsive hosts_picture">
+                                            <img src="pictures/Hotel_Amina.jpg" alt="hotel_amina" class="responsive hosts_picture">
                                         </figure>
                                             <h3>Hotel chez Amina</h3>
                                             <p>Nuit à partir de 96€</p>
@@ -191,12 +207,13 @@
                                 </div>
                             </div>
                         </div>
+                        
                     
                         <div class="col-md-12 col-sm-12 col-lg-4 order-sm-first order-md-first order-lg-last" id="popular_hosts">
-                            <h2>Les plus populaires</h2>
+                            <h1>Les plus populaires</h1>
                             <i class="fas fa-chart-line fa-lg"></i>
                             <article class="popular_details">
-                                <img src="pictures/Hotel le soleil du matin.jpg" alt="hotel_soleil" class="responsive">
+                                <img src="pictures/Hotel _soleil_matin.jpg" alt="hotel_soleil" class="responsive">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
                                 <div class="note_popular">
@@ -208,7 +225,7 @@
                                 </div>
                             </article>
                             <article class="popular_details">
-                                <img src="pictures/Chambre hotes.jpg" alt="chambre_hotes" class="responsive">
+                                <img src="pictures/Chambre_hotes.jpg" alt="chambre_hotes" class="responsive">
                                 <h3>Au coeur de l'eau Chabre d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
                                 <div class="note_popular">
@@ -220,7 +237,7 @@
                                 </div>
                             </article>
                             <article class="popular_details">
-                                <img src="pictures/hotel bleu et blanc.jpg" alt="hotel_bleu" class="responsive">
+                                <img src="pictures/hotel_bleu_blanc.jpg" alt="hotel_bleu" class="responsive">
                                 <h3>Hôtel Tout bleu et blanc</h3>
                                 <p>Nuit à partir de 68€</p>
                                 <div class="note_popular">
@@ -235,17 +252,18 @@
                     </div>
                 </div>
             </section>
+            -->
 
             <section id="activities">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <article class="activities_details">
-                                <img src="pictures/Vieux port.jpg" alt="vieux_port" class="responsive">
+                                <img src="pictures/Vieux_port.jpg" alt="vieux_port" class="responsive">
                                 <h4>Vieux Port</h4>
                             </article>
                             <article class="activities_details">
-                                <img src="pictures/Ile du frioul.jpg" alt="iles_frioul" class="responsive">
+                                <img src="pictures/Ile_frioul.jpg" alt="iles_frioul" class="responsive">
                                 <h4>Iles du Frioul</h4>
                             </article>
                             <article class="activities_details">
@@ -253,7 +271,7 @@
                                 <h4>Parc National des Calanques</h4>
                             </article>
                             <article class="activities_details">
-                                <img src="pictures/ND de la Garde.jpg" alt="Notre_dame" class="responsive">
+                                <img src="pictures/ND_garde.jpg" alt="Notre_dame" class="responsive">
                                 <h4>Notre-Dame-de-la-Garde</h4>
                             </article>
                             <article class="activities_details">
