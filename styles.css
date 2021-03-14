@@ -16,7 +16,7 @@ body {
 }
 
 main section h1 {
-    font-size: 1.3em;
+    font-size: 1.3vw;
     font-weight: 900;
 }
 
@@ -25,7 +25,7 @@ main section h1 {
 
 header {    
     height: 8em;
-    font-size: 0.9em;
+    font-size: 1vw;
 }
 
 #header_wrapper {
@@ -91,7 +91,7 @@ header nav ul li a:hover {
 
 
 #research p {
-    font-size: 0.9em;
+    font-size: 1vw;
 }
 
 #search_form {
@@ -227,21 +227,25 @@ header nav ul li a:hover {
     grid-template-columns: 2fr 1fr;
     grid-row-gap:2em;
     grid-column-gap:2em;
-    height: 35em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hosts-item-a {
+    grid-column: 1;
+    grid-row: 1;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 12% repeat(2,auto);
+    grid-template-rows: 12% repeat(2,1fr) 12%;
     justify-content: center;
     padding: 0 1em 0 1em;
     border-radius: 20px;
-    background: #F2F2F2;
+    background: blue;
 }
 
 .hosts-title {
     grid-column: 1 / span 2 ;
+    grid-row: 1;
     align-self: end;
     margin-left: 0.5em;
     padding-bottom: 0.5em;
@@ -251,17 +255,16 @@ header nav ul li a:hover {
     display: grid;
     grid-template-rows: 6fr 1fr 3fr;
     grid-template-columns: 1fr;
-    max-height: 200px;
-    max-width: 260px;
     margin: 0.5em;
     border-radius: 20px;
     border: 4px #fff solid;
     background: #fff;
+    box-shadow: 1px 1px 20px #d9d9d9;
 }
 
 #hosts-item-1 {
-    grid-column-start: 1;
-    grid-row-start:2 ;
+    grid-column: 1;
+    grid-row:2 ;
 }
 
 #hosts-item-2 {
@@ -288,7 +291,7 @@ header nav ul li a:hover {
 }
 
 .hosts_picture_wrapper {
-    grid-row: 1 / span 3;
+    grid-row: 1 / 3;
     grid-column: 1;
     overflow: hidden;
     z-index: 1;
@@ -300,6 +303,7 @@ header nav ul li a:hover {
 .hosts_picture {
     max-height: 150px;
     max-width: 250px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -311,7 +315,7 @@ header nav ul li a:hover {
     z-index: 10;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding-left: 0.625em;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -319,12 +323,12 @@ header nav ul li a:hover {
 }
 
 .hosts_results_wrapper h2 {
-    font-size: 0.9em;
+    font-size: 0.9vw;
     font-weight: 900;
 }
 
 .hosts_results_wrapper p {
-    font-size: 0.8em;
+    font-size: 0.8vw;
     margin-bottom: 0;
 }
 
@@ -344,7 +348,7 @@ header nav ul li a:hover {
 
 .popular-item-b {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     grid-template-rows: 10% repeat(3, auto);
     align-items: center;
     padding: 0 1em 0 1em;
@@ -360,24 +364,24 @@ header nav ul li a:hover {
 
 .popular-item {
     display: grid;
-    grid-template: 1fr / 40% 10% 50%;
-    max-width: 350px;
-    max-height: 150px;
-    
+    grid-template: auto / 4fr 1fr 5fr;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #d9d9d9;
 }
 
 .popular_picture_wrapper {
     grid-row: 1;
     grid-column: 1 / span 2;
     z-index: 1;
+    overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-
 }
 
 .popular-picture {
-    max-height: 200px;
-    max-width: 150px;
+    max-height: 150px;
+    max-width: 200px;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -402,20 +406,64 @@ header nav ul li a:hover {
 
 .activities {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10% repeat(3,auto);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 10% 4fr 5% 5% 4fr ;
     margin: 2em 0 2em 0;
+    height: 33em;
 }
 
-.activitie_area_1 {
+.activitie_area {
+    margin: 0.5em; 
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px #c6c7c7;
+}
+
+#activitie_1 {
     grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    border-radius: 10px;
+    grid-row: 2 / span 4;
     display: grid;
-    grid-template: none  1fr / 1fr 11%;
-    
-    border: 2px red solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10%;
+}
+
+#activitie_2 {
+    grid-column: 2;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20%;
+}
+
+#activitie_3 {
+    grid-column: 2;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 25%;
+}
+
+#activitie_4 {
+    grid-column: 3;
+    grid-row: 2 / span 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10%;
+}
+
+#activitie_5 {
+    grid-column: 4;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 25%;
+}
+
+#activitie_6 {
+    grid-column: 4;
+    grid-row: 4 / span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 20%;
 }
 
 .activitie_picture_wrapper {
@@ -426,21 +474,43 @@ header nav ul li a:hover {
 }
 
 .activitie_picture {
+    max-height: 450px;
+    max-width: 300px;
+    height: 100%;
     object-fit: cover;
-    max-height: 350px;
-    max-width: 250px;
-    height: 28em;
     border-radius: 20px;
-    overflow: hidden  ;
-    
+    overflow: hidden;
 }
 
-#legend_1 {
+.legend {
     grid-column: 1;
     grid-row: 2;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
     background: #fff;
-    border: 2px blue solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px #fff solid;
+    font-weight: 900;
+    font-size: 0.8vw;
+}
+
+/*** FOOOTER  **********/ 
+
+footer {
+    display: flex;
+    background: #F2F2F2;
+}
+
+footer h4 {
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+footer li {
+    font-size: 0.8vw;
 }
 
 
@@ -451,7 +521,7 @@ header nav ul li a:hover {
 /**** HEADER DEVICE *****/
 
     header {
-        font-size: 1em;
+        font-size: 1vw;
     }
 
     #header_wrapper {
@@ -508,7 +578,7 @@ header nav ul li a:hover {
 /**** RESEARCH DEVICE *****/
 
     #research h1 {
-        font-size: 1.5em;
+        font-size: 1.5vw;
         margin-top: 20px;
         margin-bottom: 10px;
     }

@@ -4,7 +4,8 @@
         <html lang="fr">
 	    <title>Réservia</title>
 	    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>    
@@ -73,7 +74,7 @@
                 </div>
             </section>
             
-            <div class="container">
+            
                 <section class="hosts_results_wrapper">
                     <div class="hosts-item-a">
                         <div class="hosts-title">
@@ -84,7 +85,7 @@
                                 <img src="pictures/Auberge_ cannebiere.jpg" alt="auberge_cannebiere"  class="responsive hosts_picture no-margin">
                             </div>
                             <div class="hosts_details">
-                                <h2>Auberge la Cannebière</h2>
+                                <h2 class="no-margin">Auberge la Cannebière</h2>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                 <div class="note">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -100,7 +101,7 @@
                                 <img src="pictures/Hotel_port.jpg" alt="hotel_port" class="responsive hosts_picture no-margin">
                             </div>
                             <div class="hosts_details">
-                                <h2>Hotel du Port</h2>
+                                <h2 class="no-margin">Hotel du Port</h2>
                                 <p>Nuit à partir de 52€</p>
                                 <div class="note">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -116,7 +117,7 @@
                                 <img src="pictures/Hotel_mouettes.jpg" alt="hotel_mouettes" class="responsive hosts_picture no-margin">
                             </div>
                             <div class="hosts_details">
-                                <h2>Hotel Les mouettes</h2>
+                                <h2 class="no-margin">Hotel Les mouettes</h2>
                                 <p>Nuit à partir de 76€</p>
                                 <div class="note">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -132,7 +133,7 @@
                                 <img src="pictures/Hotel_mer.jpg" alt="hotel_mer" class="responsive hosts_picture no-margin">
                             </div>
                             <div class="hosts_details">
-                                <h2>Hotel de la mer</h2>
+                                <h2 class="no-margin">Hotel de la mer</h2>
                                 <p>Nuit à partir de 46€</p>
                                 <div class="note">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -148,7 +149,7 @@
                                 <img src="pictures/Auberge_panier.jpg" alt="auberge_panier" class="responsive hosts_picture no-margin">
                             </div>
                             <div class="hosts_details">
-                                <h2>Auberge Le Panier</h2>
+                                <h2 class="no-margin">Auberge Le Panier</h2>
                                 <p>Nuit à partir de <strong>23€</strong></p>
                                 <div class="note">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -197,13 +198,12 @@
                                 </div>
                             </div>
                         </article>
-                        
-                        <!-- <article class="popular-item">
-                            <div class="popular-hosts-picture">
+                        <article class="popular-item" id="popular-item-2">
+                            <div class="popular_picture_wrapper">
                                 <img src="pictures/Chambre_hotes.jpg" alt="chambre_hotes" class="responsive popular-picture">
                             </div>
                             <div class="popular_details">
-                                <h2>Au coeur de l'eau Chabre d'hôtes</h2>
+                                <h2 class="no-margin">Au coeur de l'eau Chabre d'hôtes</h2>
                                 <p>Nuit à partir de 71€</p>
                                 <div class="note_popular">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -214,12 +214,12 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="popular-item">
-                            <div class="popular-hosts-picture">
+                        <article class="popular-item" id="popular-item-3">
+                            <div class="popular_picture_wrapper">
                                 <img src="pictures/hotel_bleu_blanc.jpg" alt="hotel_bleu" class="responsive popular-picture">
                             </div>
                             <div class="popular_details">
-                                <h2>Hôtel Tout bleu et blanc</h2>
+                                <h2 class="no-margin">Hôtel Tout bleu et blanc</h2>
                                 <p>Nuit à partir de 68€</p>
                                 <div class="note_popular">
                                     <i class="fas fa-star fa-xs" style="color:#0065FC"></i>
@@ -229,10 +229,9 @@
                                     <i class="fas fa-star fa-xs" style="color:#F2F2F2"></i>
                                 </div>
                             </div>
-                        </article> -->
+                        </article>
                     </div>
                 </section>
-            </div> 
 
             <div class="container">
                 <section class="activities">
@@ -240,48 +239,44 @@
                         <h1 clas="no-margin">Activités à Marseille</h1>
                     </div>
                     <h1></h1>
-                    <article class="activitie_area_1">
+                    <article class="activitie_area" id="activitie_1">
                         <div class="activitie_picture_wrapper">
                             <img src="pictures/Vieux_port.jpg" alt="vieux_port" class="responsive activitie_picture">
                         </div>
-                        <p class="no-margin" id="legend_1">Vieux Port</p>
+                        <p class="no-margin legend">Vieux Port</p>
                     </article>
-                    
-                </section>
-
-            </div>
-
-
-            <!-- OLD ACTIVITIES 
-            <section id="activities">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-12">
-                            <article class="activities_details">
-                                <img src="pictures/Vieux_port.jpg" alt="vieux_port" class="responsive">
-                                <h4>Vieux Port</h4>
-                            </article>
-                            <article class="activities_details">
-                                <img src="pictures/Ile_frioul.jpg" alt="iles_frioul" class="responsive">
-                                <h4>Iles du Frioul</h4>
-                            </article>
-                            <article class="activities_details">
-                                <img src="pictures/Calanques.jpg" alt="calanques" class="responsive">
-                                <h4>Parc National des Calanques</h4>
-                            </article>
-                            <article class="activities_details">
-                                <img src="pictures/ND_garde.jpg" alt="Notre_dame" class="responsive">
-                                <h4>Notre-Dame-de-la-Garde</h4>
-                            </article>
-                            <article class="activities_details">
-                                <img src="pictures/Longchamp.jpg" alt="Longchamp" class="responsive">
-                                <h4>Parc Longchamp</h4>
-                            </article>
+                    <article class="activitie_area" id="activitie_2">
+                        <div class="activitie_picture_wrapper">
+                            <img src="pictures/Fort_Pomegues.jpg" alt="fort_pomegues" class="responsive activitie_picture">
                         </div>
-                    </div>
-                </div>
-            </section> -->
-
+                        <p class="no-margin legend">Fort de Pomègues</p>
+                    </article>
+                    <article class="activitie_area" id="activitie_3">
+                        <div class="activitie_picture_wrapper">
+                            <img src="pictures/Ile_frioul.jpg" alt="iles_frioul" class="responsive activitie_picture">
+                        </div>
+                        <p class="no-margin legend">Iles du Frioul</p>
+                    </article>
+                    <article class="activitie_area" id="activitie_4">
+                        <div class="activitie_picture_wrapper">
+                            <img src="pictures/Calanques.jpg" alt="calanques" class="responsive activitie_picture">
+                        </div>
+                        <p class="no-margin legend">Parc National des Calanques</p>
+                    </article>
+                    <article class="activitie_area" id="activitie_5">
+                        <div class="activitie_picture_wrapper">
+                            <img src="pictures/ND_garde.jpg" alt="Notre_dame" class="responsive activitie_picture">
+                        </div>
+                        <p class="no-margin legend">Notre-Dame-de-la-Garde</p>
+                    </article>
+                    <article class="activitie_area" id="activitie_6">
+                        <div class="activitie_picture_wrapper">
+                            <img src="pictures/Longchamp.jpg" alt="Longchamp" class="responsive activitie_picture">
+                        </div>
+                        <p class="no-margin legend">Parc Longchamp</p>
+                    </article>
+                </section>
+            </div>
         </main>
 
         <footer>
