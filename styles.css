@@ -191,12 +191,8 @@ input[type="search"] {
     font-weight: 900;
 }
 
-#filters button {
-}
-
 .button_filter {
     position: relative;
-    
     margin: 1rem 1rem 0 2.5rem;
     padding: 0.7rem 0.7rem 0.6rem 1.7rem;
     border-top-right-radius: 50px;
