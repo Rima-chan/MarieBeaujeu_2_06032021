@@ -21,8 +21,8 @@
             <div id="navigation_home">   
                 <nav>
                     <ul class="no-margin">
-                        <li class="no-margin"><a href="">Hébergements</a></li>
-                        <li class="no-margin"><a href="#activities" id="li-item-2">Activités</a></li>
+                        <li class="no-margin"><a href="#host_selection">Hébergements</a></li>
+                        <li class="no-margin"><a href="#activity_selection">Activités</a></li>
                     </ul>
                 </nav>
             </div>   
@@ -38,20 +38,20 @@
                             <span class="fa fa-map-marker-alt" style="color:black" id="map_icon"></span>
                         </div>
                         <div id="search_area">
-                            <input type="search" class="form-control" id="cities_research" placeholder="Marseille, France">
+                            <input type="search" id="cities_research">
                         </div>
                         <div id="button_area">
-                            <button type="button" id="research_button"><i class="fas fa-search"></i></button>
+                            <button type="button" id="research_button" class="cursor"><span id="search_icon"><i class="fas fa-search"></i></span><span id="search_text">Rechercher</span></button>
                         </div>
                     </div>
                 </form>
                         
                 <div id="filters">
                     <p class="no-margin" id="filter_name">Filtres</p>
-                        <button type="button" class="button_filter" id="button_filter-1" ><span class="icon_filter"><i class="fas fa-money-bill-wave fa-lg"></i></span>Economique</button>
-                        <button type="button" class="button_filter" id="button_filter-2" ><span class="icon_filter"><i class="fas fa-child fa-lg"></i></span>Familial</button>
-                        <button type="button" class="button_filter" id="button_filter-3" ><span class="icon_filter"><i class="fas fa-heart fa-lg"></i></span>Romantique</button>
-                        <button type="button" class="button_filter" id="button_filter-4"><span class="icon_filter"><i class="fas fa-dog fa-lg"></i></span>Animaux autorisés</button>  
+                        <button type="button" class="button_filter cursor" id="button_filter-1" ><span class="icon_filter"><i class="fas fa-money-bill-wave fa-lg"></i></span>Economique</button>
+                        <button type="button" class="button_filter cursor" id="button_filter-2" ><span class="icon_filter"><i class="fas fa-child fa-lg"></i></span>Familial</button>
+                        <button type="button" class="button_filter cursor" id="button_filter-3" ><span class="icon_filter"><i class="fas fa-heart fa-lg"></i></span>Romantique</button>
+                        <button type="button" class="button_filter cursor" id="button_filter-4"><span class="icon_filter"><i class="fas fa-dog fa-lg"></i></span>Animaux autorisés</button>  
                 </div>
                 <div id="infos">
                     <div id="infos_icon">
@@ -70,7 +70,7 @@
                         <div class="hosts_picture_wrapper no-margin">
                             <img src="pictures/Auberge_cannebiere.jpg" alt="auberge_cannebiere"  class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Auberge la Cannebière</h2>
                             <p>Nuit à partir de <strong>25€</strong></p>
                             <div>
@@ -86,7 +86,7 @@
                         <div class="hosts_picture_wrapper">
                             <img src="pictures/Hotel_port.jpg" alt="hotel_port" class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Hotel du Port</h2>
                             <p>Nuit à partir de 52€</p>
                             <div>
@@ -102,7 +102,7 @@
                         <div class="hosts_picture_wrapper">
                             <img src="pictures/Hotel_mouettes.jpg" alt="hotel_mouettes" class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Hotel Les mouettes</h2>
                             <p>Nuit à partir de 76€</p>
                             <div class="note">
@@ -118,7 +118,7 @@
                         <div class="hosts_picture_wrapper">
                             <img src="pictures/Hotel_mer.jpg" alt="hotel_mer" class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Hotel de la mer</h2>
                             <p>Nuit à partir de 46€</p>
                             <div class="note">
@@ -134,7 +134,7 @@
                         <div class="hosts_picture_wrapper">
                             <img src="pictures/Auberge_panier.jpg" alt="auberge_panier" class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Auberge Le Panier</h2>
                             <p>Nuit à partir de <strong>23€</strong></p>
                             <div class="note">
@@ -150,7 +150,7 @@
                         <div class="hosts_picture_wrapper">
                             <img src="pictures/Hotel_Amina.jpg" alt="hotel_amina" class="responsive host_picture no-margin">
                         </div>
-                        <div class="hosts_details">
+                        <div class="hosts_details cursor">
                             <h2 class="no-margin">Hotel chez Amina</h2>
                             <p class="no-margin">Nuit à partir de 96€</p>
                             <div class="note">
@@ -162,11 +162,11 @@
                             </div>
                         </div>
                     </article>
-                    <div class="more_details">Afficher plus</div>
+                    <div class="more_details cursor">Afficher plus</div>
                 </div>
 
-                <div class="popular_wrapper">
-                    <div class="popular_title">
+                <div class="popular_wrapper"id="host_selection">
+                    <div class="popular_title" >
                         <h1 class="no-margin">Les plus populaires</h1>
                         <i class="fas fa-chart-line fa-lg"></i>
                     </div>
@@ -174,7 +174,7 @@
                         <div class="popular_picture_wrapper">
                             <img src="pictures/Hotel_soleil_matin.jpg" alt="hotel_soleil" class="responsive popular_picture">
                         </div>
-                        <div class="popular_details">
+                        <div class="popular_details cursor">
                             <h2 class="no-margin">Hôtel Le soleil du matin</h2>
                             <p>Nuit à partir de 128€</p>
                             <div class="note_popular">
@@ -190,7 +190,7 @@
                         <div class="popular_picture_wrapper">
                             <img src="pictures/Chambre_hotes.jpg" alt="chambre_hotes" class="responsive popular_picture">
                         </div>
-                        <div class="popular_details">
+                        <div class="popular_details cursor">
                             <h2 class="no-margin">Au coeur de l'eau Chabre d'hôtes</h2>
                             <p>Nuit à partir de 71€</p>
                             <div class="note_popular">
@@ -206,7 +206,7 @@
                         <div class="popular_picture_wrapper">
                             <img src="pictures/hotel_bleu_blanc.jpg" alt="hotel_bleu" class="responsive popular_picture">
                         </div>
-                        <div class="popular_details">
+                        <div class="popular_details cursor">
                             <h2 class="no-margin">Hôtel Tout bleu et blanc</h2>
                             <p>Nuit à partir de 68€</p>
                             <div class="note_popular">
@@ -222,44 +222,44 @@
             </section>
 
             <section class="activities">
-                <div class="activitie_title">
+                <div class="activity_title" id="activity_selection">
                     <h1 class="no-margin">Activités à Marseille</h1>
                 </div>
-                <article class="activitie_item" id="activitie-1">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/Vieux_port.jpg" alt="vieux_port" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-1">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/Vieux_port.jpg" alt="vieux_port" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Vieux Port</h4>
+                    <h4 class="no-margin legend cursor">Vieux Port</h4>
                 </article>
-                <article class="activitie_item" id="activitie-2">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/Fort_Pomegues.jpg" alt="fort_pomegues" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-2">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/Fort_Pomegues.jpg" alt="fort_pomegues" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Fort de Pomègues</h4>
+                    <h4 class="no-margin legend cursor">Fort de Pomègues</h4>
                 </article>
-                <article class="activitie_item" id="activitie-3">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/Ile_frioul.jpg" alt="iles_frioul" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-3">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/Ile_frioul.jpg" alt="iles_frioul" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Iles du Frioul</h4>
+                    <h4 class="no-margin legend cursor">Iles du Frioul</h4>
                 </article>
-                <article class="activitie_item" id="activitie-4">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/Calanques.jpg" alt="calanques" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-4">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/Calanques.jpg" alt="calanques" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Parc National des Calanques</h4>
+                    <h4 class="no-margin legend cursor">Parc National des Calanques</h4>
                 </article>
-                <article class="activitie_item" id="activitie-5">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/ND_garde.jpg" alt="Notre_dame" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-5">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/ND_garde.jpg" alt="Notre_dame" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Notre-Dame-de-la-Garde</h4>
+                    <h4 class="no-margin legend cursor">Notre-Dame-de-la-Garde</h4>
                 </article>
-                <article class="activitie_item" id="activitie-6">
-                    <div class="activitie_picture_wrapper">
-                        <img src="pictures/Longchamp.jpg" alt="Longchamp" class="responsive activitie_picture">
+                <article class="activity_item" id="activity-6">
+                    <div class="activity_picture_wrapper">
+                        <img src="pictures/Longchamp.jpg" alt="Longchamp" class="responsive activity_picture">
                     </div>
-                    <h4 class="no-margin legend">Parc Longchamp</h4>
+                    <h4 class="no-margin legend cursor">Parc Longchamp</h4>
                 </article>
             </section>
         </main>
@@ -268,23 +268,23 @@
             <div class="nav_footer">
                 <h5>A propos</h5>
                 <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
+                    <li class="cursor">Fonctionnement du site</li>
+                    <li class="cursor">Conditions générales de vente</li>
+                    <li class="cursor">Données et confidentialité</li>
                 </ul>
             </div>
             <div class="nav_footer">
                 <h5>Nos hébégerments</h5>
                 <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
+                    <li class="cursor">Charte qualité</li>
+                    <li class="cursor">Soumettre votre hôtel</li>
                 </ul>
             </div>
             <div class="nav_footer">
                 <h5>Assistance</h5>
                 <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <li class="cursor">Centre d'aide</li>
+                    <li class="cursor">Nous contacter</li>
                 </ul>
             </div>
         </footer>
