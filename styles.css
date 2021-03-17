@@ -26,7 +26,7 @@ main section h1 {
   
 /******** HEADER ***********/
 
-.site-header {    
+.site_header {    
     height: 8rem;
     display: flex;
     justify-content: space-between;
@@ -78,7 +78,7 @@ header nav ul li a:hover {
     text-decoration: none;
     padding-left: 2rem;
     color: #0065FC;
-    font-weight: 990;
+    font-weight: 900;
 }
 
 #inscription_menu a:hover {
@@ -106,7 +106,6 @@ header nav ul li a:hover {
     align-items: center;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    border-right: 1px #d9d9d9 solid;
     background: #d9d9d9;
 }
 
@@ -140,7 +139,7 @@ header nav ul li a:hover {
     border-bottom-right-radius: 10px;
     background: #0065FC;
     color: #fff;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 #research_button:focus {
@@ -155,7 +154,7 @@ header nav ul li a:hover {
 
 #cities_research::placeholder {
     padding-left: 0.313rem;
-    font-weight: 750;
+    font-weight: 700;
     color: #000;    
 }
 
@@ -186,7 +185,7 @@ header nav ul li a:hover {
     border-bottom-right-radius: 50px;
     border: 2px #d9d9d9 solid;
     background: #fff;
-    font-weight: 750;
+    font-weight: 700;
     font-size: 1rem;
 }
 
@@ -219,11 +218,6 @@ header nav ul li a:hover {
     margin: 3% 0 3% 0;
 }
 
-#id_icon {
-    border: #d9d9d9;
-    color: #0065FC;
-    
-}
 
 #infos_icon {
     display: flex;
@@ -249,7 +243,7 @@ header nav ul li a:hover {
     grid-template-rows: auto;
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
-    margin-left: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .hosts_results_wrapper h2 {
@@ -262,7 +256,7 @@ header nav ul li a:hover {
     font-size: 0.8rem;
 }
 
-.hosts-item-a {
+.hosts_wrapper {
     grid-column: 1;
     grid-row: 1;
     display: grid;
@@ -273,7 +267,7 @@ header nav ul li a:hover {
     background: #F2F2F2;
 }
 
-.hosts-title {
+.hosts_title {
     grid-column: 1 / span 2 ;
     grid-row: 1;
     align-self: end;
@@ -281,40 +275,39 @@ header nav ul li a:hover {
     padding-bottom: 0.5em;
 }
 
-.hosts-item {
+.hosts_item {
     display: grid;
     grid-template: 6fr 1fr 3fr / 1fr;
     margin: 0.5rem;
     border-radius: 20px;
-    border: 4px #fff solid;
     background: #fff;
     box-shadow: 1px 1px 20px #d9d9d9;
 }
 
-#hosts-item-1 {
+#host-1 {
     grid-column: 1;
     grid-row:2 ;
 }
 
-#hosts-item-2 {
+#host-2 {
     grid-column: 2;
     grid-row: 2;
 }
 
-#hosts-item-3 {
+#host-3 {
     grid-column: 3;
     grid-row: 2;
 }
-#hosts-item-4 {
+#host-4 {
     grid-column: 1;
     grid-row: 3;
 }
 
-#hosts-item-5 {
+#host-5 {
     grid-column: 2;
     grid-row: 3;
 }
-#hosts-item-6 {
+#host-6 {
     grid-column: 3;
     grid-row: 3;
 }
@@ -327,9 +320,10 @@ header nav ul li a:hover {
     padding: 0;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    border: 4px #fff solid;
 }
 
-.hosts_picture {
+.host_picture {
     max-height: 150px;
     height: 100%;
     object-fit: cover;
@@ -344,7 +338,7 @@ header nav ul li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 0.625em;
+    padding-left: 1rem;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     background: #fff;
@@ -364,7 +358,7 @@ header nav ul li a:hover {
 
 /****** MAIN - POPULAR PART *********/
 
-.popular-item-b {
+.popular_wrapper {
     display: grid;
     grid-template: 12% repeat(3, 29%) / auto;
     padding: 0 1rem 1rem 1rem;
@@ -372,7 +366,7 @@ header nav ul li a:hover {
     background: #F2F2F2;
 }
 
-.popular-title {
+.popular_title {
     display: flex;
     justify-content: space-between;
     align-self: end;
@@ -380,7 +374,7 @@ header nav ul li a:hover {
     padding-bottom: 0.5rem;
 }
 
-.popular-item {
+.popular_item {
     display: grid;
     grid-template: auto / 4fr 1fr 5fr;
     border-radius: 20px;
@@ -397,7 +391,7 @@ header nav ul li a:hover {
     border: 4px #fff solid;
 }
 
-.popular-picture {
+.popular_picture {
     max-height: 150px;
     height: 100%;
     object-fit: cover;
@@ -423,7 +417,8 @@ header nav ul li a:hover {
 
 .activities {
     display: grid;
-    grid-template: 10% 40% 5% 5% 40% / repeat(4,25%);
+    grid-template: 10% 40% 5% 5% 40% / repeat(4, 1fr);
+    grid-column-gap: 1rem;
     margin: 2em 0 2em 0;
     height: 33em;
 }
@@ -434,50 +429,50 @@ header nav ul li a:hover {
     box-shadow: 1px 1px 30px #c6c7c7;
 }
 
-.activitie-title {
+.activitie_title {
     grid-row:1;
     grid-column: 1 / span 2;
 }
 
-#activitie_1 {
+.activitie_item {
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px #c6c7c7;
+}
+
+#activitie-1 {
     grid-column: 1;
     grid-row: 2 / span 4;
-    display: grid;
     grid-template: 88% 12% / 1fr;
 }
 
-#activitie_2 {
+#activitie-2 {
     grid-column: 2;
     grid-row: 2 / span 2;
-    display: grid;
     grid-template: 78% 22% / 1fr;
 }
 
-#activitie_3 {
+#activitie-3 {
     grid-column: 2;
     grid-row: 5;
-    display: grid;
     grid-template: 76% 24% / 1fr;
 }
 
-#activitie_4 {
+#activitie-4 {
     grid-column: 3;
     grid-row: 2 / span 4;
-    display: grid;
     grid-template: 88% 12% / 1fr;
 }
 
-#activitie_5 {
+#activitie-5 {
     grid-column: 4;
     grid-row: 2;
-    display: grid;
     grid-template: 76% 24% / 1fr;
 }
 
-#activitie_6 {
+#activitie-6 {
     grid-column: 4;
     grid-row: 4 / span 2;
-    display: grid;
     grid-template: 78% 22% / 1fr;
 }
 
@@ -490,6 +485,7 @@ header nav ul li a:hover {
 
 .activitie_picture {
     height: 100%;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -500,11 +496,10 @@ header nav ul li a:hover {
     z-index: 10;
     display: flex;
     align-items: center;
-    padding: 0.5em;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
     background: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    border: 2px #fff solid;
     font-weight: 900;
     font-size: 0.9rem;
 }
@@ -517,7 +512,7 @@ footer {
 }
 
 .nav_footer {
-    margin-left: 3rem;
+    margin: 0rem 5rem 0 3rem;
 }
 
 footer p {
@@ -527,7 +522,6 @@ footer p {
 
 footer ul {
     list-style-type: none;
-    margin-right: 8rem;
     padding:0;
 }
 
@@ -550,9 +544,9 @@ footer ul li {
         padding: 0;
     }
 
-    /***** HEADER *****/
+    /***** PHONE HEADER *****/
 
-    .site-header {
+    .site_header {
         height: 10rem;
         display: flex;
         flex-wrap: wrap;
@@ -615,7 +609,7 @@ footer ul li {
         border-top:none;
     }
 
-    /******* MAIN - SEARCH PART ******/
+    /******* PHONE MAIN - SEARCH PART ******/
 
     .research h1 {
         margin: 0 1rem 0 1rem;
@@ -658,28 +652,28 @@ footer ul li {
         margin-left: 2rem;
     }
 
-    .filter_name {
+    #filter_name {
         grid-row: 1;
         grid-column: 1;
         
     }
 
-    #button_filter_1 {
+    #button_filter-1 {
         grid-row: 2;
         grid-column: 1;
     }
 
-    #button_filter_2 {
+    #button_filter-2 {
         grid-row: 2;
         grid-column: 2;
     }
 
-    #button_filter_3 {
+    #button_filter-3 {
         grid-row: 3;
         grid-column: 1;
     }
 
-    #button_filter_4 {
+    #button_filter-4 {
         grid-row: 4;
         grid-column: 1 / span 2;
     }
@@ -714,13 +708,14 @@ footer ul li {
         margin-left: 0;
     }
 
-    /******* MAIN - HOSTS PART ******/
+    /******* PHONE MAIN - HOSTS PART ******/
 
     .hosts_results_wrapper {
         display: flex;
         flex-direction: column-reverse;
     }
-    .popular-item-b {
+
+    .popular_wrapper {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -728,7 +723,7 @@ footer ul li {
     }
 
 
-    .popular-title {
+    .popular_title {
         display: flex;
         justify-content: space-between;
         align-self: flex-end;
@@ -736,31 +731,31 @@ footer ul li {
         padding: 2rem 0 0.5rem 0;
     }
 
-    .popular_details h2, .hosts-item h2{
+    .popular_details h2, .hosts_item h2{
         font-size: 1rem;
     }
 
-    .popular_details p , .hosts-item p {
+    .popular_details p , .hosts_item p {
         margin: 0 0 0.5em 0;
         font-size: 0.8em;
     }
 
-    .popular-title h1 {
+    .popular_title h1 {
         margin:0;
     }
 
-    #popular-item-3 {
+    #popular-3 {
         margin-bottom: 2rem;
     }
     
-    .hosts-item-a {
+    .hosts_wrapper {
         display: flex;
         flex-direction: column;
         padding: 0;
         background: #fff;
     }
 
-    .hosts_picture {
+    .host_picture {
         max-width: 100vw;
     }
 
@@ -768,7 +763,7 @@ footer ul li {
         margin:1rem;
     }
     
-    /******* MAIN - ACTIVITIES ******/
+    /******* PHONE MAIN - ACTIVITIES ******/
 
     .activities {
         display: flex;
@@ -776,32 +771,36 @@ footer ul li {
         height: auto;
     }
 
-    .activitie-title {
+    .activitie_title {
         padding: 0 0 1rem 0.8rem;
-    }
-
-    .activitie_picture {
-        max-width: 100vw;
     }
 
     .activities h4 {
         font-size: 1rem;
     }
 
-    #activitie_1 {
+    .activitie_item {
+        margin-bottom: 1rem;
+    }
+
+    #activitie-1 {
         grid-template-rows: 76% 24%;
     }
 
-    #activitie_2 {
+    #activitie-2 {
         grid-template-rows: 76% 24%;
         max-height: 250px;
     }
 
-    #activitie_4 {
+    #activitie-4 {
         grid-template-rows: 76% 24%;
     }
 
-    /******* FOOTER *******/
+    .activitie_picture {
+        max-width: 100vw;
+    }
+
+    /******* PHONE FOOTER *******/
 
     footer {
         display: flex;
@@ -819,7 +818,7 @@ footer ul li {
 
 @media all and (min-width: 581px) and (max-width: 768px) {
 
-    /* HEADER */
+    /****** TABLETS HEADER *******/
     
     #logo {
         min-width: 100px;
@@ -830,7 +829,7 @@ footer ul li {
         padding: 3rem 1rem 0 1rem;
     }
 
-    /* MAIN */
+    /****** TABLETS MAIN - RESEARCH PART *******/
 
     main section h1 {
         font-size: 1.5rem;
@@ -857,7 +856,7 @@ footer ul li {
     }
 
     #filters {
-        display:grid;
+        display: grid;
         grid-template: 1fr 1fr / 10% 1fr 1fr;
         grid-row-gap: 0.5rem;
         grid-column-gap: 0.5rem;
@@ -875,25 +874,27 @@ footer ul li {
         font-size: 0.9rem;
     }
 
-    #button_filter_1 {
+    #button_filter-1 {
         grid-row: 1;
         grid-column: 2;
     }
 
-    #button_filter_2 {
+    #button_filter-2 {
         grid-row: 1;
         grid-column: 3;
     }
 
-    #button_filter_3 {
+    #button_filter-3 {
         grid-row: 2;
         grid-column: 2;
     }
 
-    #button_filter_4 {
+    #button_filter-4 {
         grid-row: 2;
         grid-column:3;
     }
+
+    /****** TABLETS MAIN - HOSTS PART *******/
 
     .hosts_results_wrapper {
         display: flex;
@@ -908,40 +909,40 @@ footer ul li {
         font-size: 1rem;
     }
 
-    .hosts-item-a {
+    .hosts_wrapper {
         display:grid;
         grid-template: 10% repeat(3, 26%) 10% / 50% 50%;
     }
 
-    .hosts-title {
+    .host_title {
         grid-row: 1;
         grid-column: 1 / 3;
     }   
 
-    #hosts-item-1 {
+    #host-1 {
         grid-row: 2;
         grid-column: 1;
     }
 
-    #hosts-item-2 {
+    #host-2 {
         grid-row: 2;
         grid-column: 2;
     }
 
-    #hosts-item-3 {
+    #host-3 {
         grid-row: 3;
         grid-column: 1;
     }
 
-    #hosts-item-4 {
+    #host-4 {
         grid-row: 3;
         grid-column: 2;
     }
-    #hosts-item-5 {
+    #host-5 {
         grid-row: 4;
         grid-column: 1;
     }
-    #hosts-item-6 {
+    #host-6 {
         grid-row: 4;
         grid-column: 2;
     }
@@ -951,58 +952,72 @@ footer ul li {
         grid-column: 1;
     }
 
+    /****** TABLETS MAIN - ACTIVITIES PART *******/
+
     .activities {
         display: grid;
-        grid-template: 10% repeat(3, 30%) / repeat(4, 25%);
+        grid-template: 10% 30% 30% 30% / repeat(4, 1fr);
+        grid-row-gap: 0.5rem;
     }
 
-    .activitie-title {
+    .activitie_title {
         grid-row: 1;
         grid-column: 1 / span 2;
     }
 
-    #activitie_1 {
+    #activitie-1 {
         grid-row: 2;
         grid-column: 1 / span 2;
         grid-template-rows: 76% 24%;
     }
     
-    #activitie_2 {
+    #activitie-2 {
         grid-row: 2;
         grid-column: 3 / span 2;
         grid-template-rows: 76% 24%;
     }
 
-    #activitie_3 {
+    #activitie-3 {
         grid-row: 3;
         grid-column: 1 / span 2;
     }
 
-    #activitie_4 {
+    #activitie-4 {
         grid-row: 3;
         grid-column: 3 / span 2;
         grid-template-rows: 76% 24%;
     }
 
-    #activitie_5 {
+    #activitie-5 {
         grid-row: 4;
         grid-column: 1 / span 2;
     }
 
-    #activitie_6 {
+    #activitie-6 {
         grid-row: 4;
         grid-column: 3 / span 2;
         grid-template-rows: 76% 24%;
     }
-    /* FOOTER */
+    /****** TABLETS FOOTER *******/
+
+    footer {
+        justify-content: space-around;
+    }
+
+    .nav_footer {
+        margin: 0 0 0 1rem;
+    }
 
     footer ul {
-        margin:0
+        margin:0;
     }
 }
 
+/********** DECKSTOP - INTERMEDIATE SIZE ***********/
+
 @media all and (min-width: 768px) and (max-width: 992px)  {
 
+    /******* INTERMEDIATE - MAIN ******/
     .button_filter {
         font-size: 0.9rem;
     }
@@ -1011,34 +1026,40 @@ footer ul li {
         flex-direction: column-reverse;
     }
     
-    .popular-item-b {
+    .popular_wrapper {
         display: grid;
         grid-template-rows: 30% 70%;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .popular-title {
+    .popular_title {
         grid-column: 1 / 4;
         grid-row: 1;
         align-self: end;
     }
 
-    #popular-item-1 {
+    #popular-1 {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #popular-item-2 {
+    #popular-2 {
         grid-column: 2;
         grid-row: 2;
     }
 
-    #popular-item-3 {
+    #popular-3 {
         grid-column: 3;
         grid-row: 2;
     }
 
     .popular_details {
         padding: 0 1rem 0 0.9rem;
+    }
+
+    /****** FOOTER *******/
+
+    .nav_footer {
+        margin-right: 3rem;
     }
 }
