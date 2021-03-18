@@ -1049,9 +1049,6 @@ footer ul li {
         margin: 1rem auto 0 3rem;
         font-size: 0.9rem;
     }
-
-    #filters button {
-    }
     
     .hosts_results_wrapper {
         display: flex;
