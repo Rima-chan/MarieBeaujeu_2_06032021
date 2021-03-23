@@ -146,14 +146,15 @@ header nav ul li a:hover {
     font-weight: 600;
 }
 
-#research_button:hover {
-    outline: 0;
-    background: #0054d3;
-}
-
 #research_button:focus {
     outline: 0;
     background: #003b94;
+}
+
+
+#research_button:hover {
+    outline: 0;
+    background: #0054d3;
 }
 
 #cities_research {
@@ -188,35 +189,40 @@ input[type="search"] {
 }
 
 #filters p {
+    margin-top: 0.5rem;
     font-weight: 900;
 }
 
 .button_filter {
+    text-decoration: none;
     position: relative;
-    margin: 1rem 1rem 0 2.5rem;
+    margin: 1rem 1rem 0.5rem 2.5rem;
     padding: 0.7rem 0.7rem 0.6rem 1.7rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     border: 2px #d9d9d9 solid;
     background: #fff;
+    color: #000;
     font-weight: 700;
     font-size: 1rem;
 }
 
 .button_filter:hover {
+    text-decoration: none;
+    color: #000;
     background: #d9d9d9;
+    transform: scale(1.05);
 }
-
-.button_filter:focus {
-    outline: 0;
+.button_filter:active {
+    text-decoration: none;
 }
 
 .icon_filter {
     position: absolute;
-    top:-0.2rem;
+    top:-0.15rem;
     left:-1.5rem;
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 2.8rem;
+    width: 2.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,11 +280,13 @@ input[type="search"] {
     grid-column: 1;
     grid-row: 1;
     display: grid;
-    grid-template: 12% repeat(2,38%) 12% / repeat(3, 1fr);
+    grid-template: 12% repeat(2,33%) 12% / repeat(3, 33%);
+    grid-row-gap: 1rem;
     justify-content: center;
     padding: 0 1rem 0 1rem;
     border-radius: 20px;
     background: #F2F2F2;
+    height:100%;
 }
 
 .host_title {
@@ -286,42 +294,63 @@ input[type="search"] {
     grid-row: 1;
     align-self: end;
     margin-left: 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .hosts_item {
     display: grid;
-    grid-template: 6fr 1fr 3fr / 1fr;
+    grid-template: 60% 10% 30% / 1fr;
     margin: 0.5rem;
     border-radius: 20px;
     background: #fff;
     box-shadow: 1px 1px 20px #d9d9d9;
 }
 
+.host-card {
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+}
+
+.host-card:hover {
+    transform: scale(1.05);
+}
+
 #host-1 {
+    display: flex;
+    align-items: center;
     grid-column: 1;
-    grid-row:2 ;
+    grid-row:2 / 3;
 }
 
 #host-2 {
+    display: flex;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
 }
 
 #host-3 {
+    display: flex;
+    align-items: center;
     grid-column: 3;
     grid-row: 2;
 }
 #host-4 {
+    display: flex;
+    align-items: center;
     grid-column: 1;
     grid-row: 3;
 }
 
 #host-5 {
+    display: flex;
+    align-items: center;
     grid-column: 2;
     grid-row: 3;
 }
 #host-6 {
+    display: flex;
+    align-items: center;
     grid-column: 3;
     grid-row: 3;
 }
@@ -372,14 +401,16 @@ input[type="search"] {
 }
 
 .more_details:hover {
-    font-size: 1.1rem;
+    transform: scale(1.05);
 }
 
 /****** MAIN - POPULAR PART *********/
 
 .popular_wrapper {
     display: grid;
-    grid-template: 12% repeat(3, 29%) / auto;
+    grid-template: 12% repeat(3, 25.5%) / auto;
+    grid-row-gap: 1rem;
+    align-items: stretch;
     padding: 0 1rem 1rem 1rem;
     border-radius: 20px;
     background: #F2F2F2;
@@ -390,7 +421,6 @@ input[type="search"] {
     justify-content: space-between;
     align-self: end;
     margin: 0 0.5rem 0 0.5rem;
-    padding-bottom: 0.5rem;
 }
 
 .popular_item {
@@ -399,6 +429,33 @@ input[type="search"] {
     border-radius: 20px;
     margin: 0.5rem;
     box-shadow: 1px 1px 20px #d9d9d9;
+    color: #000;
+    text-decoration: none;
+    height: 100%;
+}
+
+.popular_item:hover {
+    text-decoration: none;
+    color: #000;
+    transform: scale(1.05);
+}
+
+#popular-1 {
+    display: flex;
+    align-items: center;
+    grid-row: 2;
+}
+
+#popular-2 {
+    display: flex;
+    align-items: center;
+    grid-row: 3;
+}
+
+#popular-3 {
+    display: flex;
+    align-items: center;
+    grid-row: 4;
 }
 
 .popular_picture_wrapper {
@@ -454,44 +511,74 @@ input[type="search"] {
 }
 
 .activity_item {
-    display: grid;
     border-radius: 20px;
+    text-decoration: none;
+    color: #000;
     box-shadow: 1px 1px 30px #c6c7c7;
+    height: 100%;
+}
+
+.activity_item:hover {
+    transform: scale(1.05);
 }
 
 #activity-1 {
     grid-column: 1;
     grid-row: 2 / span 4;
-    grid-template: 88% 12% / 1fr;
 }
 
 #activity-2 {
     grid-column: 2;
     grid-row: 2 / span 2;
-    grid-template: 78% 22% / 1fr;
 }
 
 #activity-3 {
     grid-column: 2;
     grid-row: 5;
-    grid-template: 76% 24% / 1fr;
 }
 
 #activity-4 {
     grid-column: 3;
     grid-row: 2 / span 4;
-    grid-template: 88% 12% / 1fr;
 }
 
 #activity-5 {
     grid-column: 4;
     grid-row: 2;
-    grid-template: 76% 24% / 1fr;
 }
 
 #activity-6 {
     grid-column: 4;
     grid-row: 4 / span 2;
+}
+
+#sub-activity-1 {
+    display: grid;
+    grid-template: 90% 10% / 1fr;
+}
+
+#sub-activity-2 {
+    display: grid;
+    grid-template: 78% 22% / 1fr;
+}
+
+#sub-activity-3 {
+    display: grid;
+    grid-template: 77% 23% / 1fr;
+}
+
+#sub-activity-4 {
+    display: grid;
+    grid-template: 90% 10% / 1fr;
+}
+
+#sub-activity-5 {
+    display: grid;
+    grid-template: 77% 23% / 1fr;
+}
+
+#sub-activity-6 {
+    display: grid;
     grid-template: 78% 22% / 1fr;
 }
 
@@ -846,7 +933,7 @@ footer ul li {
 
 /******************** TABLETS *******************/
 
-@media all and (min-width: 581px) and (max-width: 768px) {
+@media all and (min-width: 581px) and (max-width: 767px) {
 
     /****** TABLETS HEADER *******/
     
