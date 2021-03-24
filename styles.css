@@ -19,11 +19,6 @@ body {
     margin:0;
 }
 
-main section h1 {
-    font-size: 1.3rem;
-    font-weight: 900;
-}
-
 .cursor {
     cursor: pointer;
 }
@@ -82,7 +77,7 @@ header nav ul li a:hover {
     text-decoration: none;
     padding-left: 2rem;
     color: #0065FC;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 #inscription_menu a:hover {
@@ -91,10 +86,6 @@ header nav ul li a:hover {
 }
 
 /****** MAIN - SEARCH PART *********/
-
-.research p {
-    font-size: 1rem;
-}
 
 #search_form {
     width: 30vw;
@@ -143,7 +134,7 @@ header nav ul li a:hover {
     border-bottom-right-radius: 10px;
     background: #0065FC;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 #research_button:focus {
@@ -166,13 +157,11 @@ header nav ul li a:hover {
 input[type="search"] {
     padding: 0 1rem 0 1rem;
     font-size: 100%;
-    font-weight: 600;
+    font-weight: bold;
     color: #000;
 }
 
 #cities_research::placeholder {
-    padding-left: 0.313rem;
-    font-weight: 700;
     color: #000;    
 }
 
@@ -190,7 +179,7 @@ input[type="search"] {
 
 #filters p {
     margin-top: 0.5rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .button_filter {
@@ -203,7 +192,7 @@ input[type="search"] {
     border: 2px #d9d9d9 solid;
     background: #fff;
     color: #000;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1rem;
 }
 
@@ -267,13 +256,12 @@ input[type="search"] {
 }
 
 .hosts_results_wrapper h2 {
-    font-size: 0.9rem;
-    font-weight: 900;
+    font-size: 1.1rem;
 }
 
 .hosts_results_wrapper p {
     margin: 0.2rem 0 0.2rem 0;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .hosts_wrapper {
@@ -397,7 +385,7 @@ input[type="search"] {
     justify-content: flex-start;
     margin: 0.5rem;
     padding-left: 0.5rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 .more_details:hover {
@@ -484,9 +472,13 @@ input[type="search"] {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 2.1rem 0 0.9rem;
+    padding: 1rem 2rem 1rem 0.9rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.note_popular {
+    margin-top: 2rem;
 }
 
 
@@ -607,8 +599,6 @@ input[type="search"] {
     background: #fff;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    font-weight: 900;
-    font-size: 0.9rem;
 }
 
 /******** FOOTER  **********/ 
@@ -624,8 +614,7 @@ footer {
 }
 
 footer p {
-    font-size: 0.8rem;
-    font-weight: 900;
+    font-weight: bold;
 }
 
 footer ul {
@@ -640,7 +629,7 @@ footer ul li {
 }
 
 .nav_footer ul li:hover {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 /************************* PHONE ************************/
@@ -841,16 +830,28 @@ footer ul li {
     }
 
     .popular_details h2, .hosts_item h2{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .popular_details p , .hosts_item p {
         margin: 0 0 0.5rem 0;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .popular_title h1 {
         margin:0;
+    }
+
+    .popular_details p {
+        margin-top: 0.5rem;
+    }
+
+    .popular_details {
+        padding: 0.5rem 2rem 0.5rem 0.9rem;
+    }
+
+    .note_popular {
+        margin-top: 1rem;
     }
 
     .hosts_wrapper {
