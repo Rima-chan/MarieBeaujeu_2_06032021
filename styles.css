@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Raleway', sans-serif !important;
+    overflow-x: hidden;
 }
 
 .responsive {
@@ -1162,6 +1163,11 @@ footer ul li {
 @media all and (min-width: 769px) and (max-width: 992px)  {
 
     /******* INTERMEDIATE - MAIN ******/
+
+    #search_form {
+        width: 50vw;
+    }
+
     .button_filter {
         margin: 1rem auto 0 3rem;
         font-size: 0.9rem;
