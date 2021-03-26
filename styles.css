@@ -1,8 +1,7 @@
 /* GENERAL */ 
 
 body {
-    font-family: 'Raleway', sans-serif !important;
-    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
 }
 
 .responsive {
@@ -14,6 +13,7 @@ body {
 .wrapper {
     margin-left: 3rem;
     margin-right: 3rem;
+    overflow-x: hidden;
 }
 
 .no-margin {
@@ -163,7 +163,8 @@ input[type="search"] {
 }
 
 #cities_research::placeholder {
-    color: #000;    
+    color: #000;
+    opacity: 1;    
 }
 
 #cities_research:focus {
@@ -423,6 +424,7 @@ input[type="search"] {
     margin: 0.5rem;
     box-shadow: 1px 1px 20px #d9d9d9;
     height: 100%;
+    width: 100%;
 }
 
 .popular_item:hover {
@@ -491,6 +493,7 @@ input[type="search"] {
     grid-template: 10% 40% 5% 5% 40% / repeat(4, 1fr);
     grid-column-gap: 1rem;
     margin: 2rem 0 2rem 0;
+    padding: 0 1rem 0 1rem;
     height: 33rem;
 }
 
@@ -506,8 +509,8 @@ input[type="search"] {
 
 .activity_item {
     border-radius: 20px;
-    box-shadow: 1px 1px 30px #c6c7c7;
     height: 100%;
+    box-shadow: 2px 2px 14px #c6c7c7
 }
 
 .activity_item:hover {
@@ -609,7 +612,8 @@ footer {
 }
 
 .nav_footer {
-    margin: 0rem 15rem 0 3rem;
+    flex-grow:1;
+    padding-left: 2rem;
 }
 
 footer p {
@@ -634,6 +638,10 @@ footer ul li {
 /************************* PHONE ************************/
 
 @media all and (max-width: 580px) {
+
+    body {
+        margin:0;
+    }
 
     .wrapper {
         margin: 0;
@@ -695,7 +703,6 @@ footer ul li {
     }
 
     #navigation_home nav ul li:hover {
-        
         border-bottom: 2px #0065FC solid;
     }
     
@@ -862,6 +869,11 @@ footer ul li {
 
     .host_title {
         align-self: start;
+        padding-left: 1rem
+    }
+
+    .host-card {
+        padding: 0 1rem 0 1rem;
     }
 
     .hosts_details {
@@ -873,6 +885,10 @@ footer ul li {
         max-width: 100vw;
     }
     
+    .more_details {
+        padding-left: 1rem;
+    }
+
     /******* PHONE MAIN - ACTIVITIES ******/
 
     .activities {
@@ -1096,8 +1112,7 @@ footer ul li {
 
     .activities {
         display: grid;
-        grid-template-columns: auto 5% 2% 5% auto;
-        grid-template-rows: 5% repeat(5, auto);
+        grid-template: 5% 2fr 1fr 1fr 1fr 2fr / auto 5% 2% 5% auto;
         grid-row-gap: 1rem;
         grid-column-gap: 0.5rem;
         height: auto;
@@ -1217,7 +1232,7 @@ footer ul li {
     .activities {
         display: grid;
         grid-template-columns: auto 5% 2% 5% auto;
-        grid-template-rows: 5% repeat(5, auto);
+        grid-template-rows: 5% 2fr 1fr 1fr 1fr 2fr;
         grid-row-gap: 1rem;
         grid-column-gap: 0.5rem;
         height: auto;
