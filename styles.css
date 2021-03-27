@@ -412,6 +412,10 @@ input[type="search"] {
     margin: 0 0.5rem 0 0.5rem;
 }
 
+#popular_icon {
+    line-height: 1.5rem;
+}
+
 .popular_card {
     color: #000;
     text-decoration: none;
@@ -831,8 +835,8 @@ footer ul li {
         display: flex;
         justify-content: space-between;
         align-self: flex-end;
-        width: 95%;
         padding: 2rem 0 0.5rem 0;
+        margin: 0 1.5rem 0 1.5rem;
     }
 
     .popular_details h2, .hosts_item h2{
@@ -846,6 +850,10 @@ footer ul li {
 
     .popular_title h1 {
         margin:0;
+    }
+
+    .popular_item {
+        margin: 0.5rem 1rem 0.5rem 1rem;
     }
 
     .popular_details p {
@@ -898,7 +906,7 @@ footer ul li {
     }
 
     .activity_title {
-        margin: 0 0 1.5rem 0.8rem;
+        margin: 0 0 1.5rem 0.5rem;
     }
 
     .activity h4 {
@@ -907,7 +915,36 @@ footer ul li {
 
     .activity_item {
         margin: 0 0.5rem 1rem 0.5rem;
-    }   
+    }
+
+    .activity_card {
+        flex: 1 1 0;
+        padding-bottom: 1rem;
+    }
+
+    /* #activity-1 {
+        flex: 1 1 0;
+    }
+
+    #activity-2 {
+        flex: 1 1 0;
+    }
+
+    #activity-3 {
+        flex: 1 1 0;
+    }
+
+    #activity-4 {
+        flex: 1 1 0;
+    }
+
+    #activity-5 {
+        flex: 1 1 0;
+    }
+
+    #activity-6 {
+        flex: 1 1 0;
+    } */
 
     #sub-activity-1 {
         grid-template: 70% 30% / 1fr;
@@ -954,7 +991,7 @@ footer ul li {
     }
 
     .nav_footer {
-        margin: 0rem 3rem 0 3rem;
+        margin: 0rem 3rem 0 0;
     }
 
     .nav_footer li {
@@ -1165,7 +1202,7 @@ footer ul li {
     }
 
     .nav_footer {
-        margin: 0 0 0 1rem;
+        margin: 0;
     }
 
     footer ul {
