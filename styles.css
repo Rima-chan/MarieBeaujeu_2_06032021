@@ -2,6 +2,9 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .responsive {
@@ -11,9 +14,7 @@ body {
   }
 
 .wrapper {
-    margin-left: 3rem;
-    margin-right: 3rem; 
-    overflow-x: hidden;
+    margin: 0 3rem;
 }
 
 .no-margin {
@@ -313,10 +314,6 @@ input[type="search"] {
     align-items: center;
 }
 
-.host-card:hover {
-    transform: scale(1.05);
-}
-
 #host-1 {
     grid-column: 1;
     grid-row:2 / 3;
@@ -389,10 +386,6 @@ input[type="search"] {
     font-weight: bold;
 }
 
-.more_details:hover {
-    transform: scale(1.05);
-}
-
 /****** MAIN - POPULAR PART *********/
 
 .popular_wrapper {
@@ -433,7 +426,6 @@ input[type="search"] {
 .popular_item:hover {
     text-decoration: none;
     color: #000;
-    transform: scale(1.05);
 }
 
 #popular-1 {
@@ -464,7 +456,7 @@ input[type="search"] {
 }
 
 .popular_picture {
-    max-height: 170px;
+    max-height: 200px;
     height: 100%;
     object-fit: cover;
     border-top-left-radius: 20px;
@@ -514,10 +506,6 @@ input[type="search"] {
     border-radius: 20px;
     height: 100%;
     box-shadow: 2px 2px 14px #c6c7c7
-}
-
-.activity_item:hover {
-    transform: scale(1.05);
 }
 
 #activity-1 {
@@ -616,7 +604,7 @@ footer {
 
 .nav_footer {
     flex-grow:1;
-    padding-left: 2rem;
+    padding-left: 4rem;
 }
 
 footer p {
@@ -917,33 +905,8 @@ footer ul li {
     }
 
     .activity_card {
-        flex: 1 1 0;
         padding-bottom: 1rem;
     }
-
-    /* #activity-1 {
-        flex: 1 1 0;
-    }
-
-    #activity-2 {
-        flex: 1 1 0;
-    }
-
-    #activity-3 {
-        flex: 1 1 0;
-    }
-
-    #activity-4 {
-        flex: 1 1 0;
-    }
-
-    #activity-5 {
-        flex: 1 1 0;
-    }
-
-    #activity-6 {
-        flex: 1 1 0;
-    } */
 
     #sub-activity-1 {
         grid-template: 70% 30% / 1fr;
@@ -971,7 +934,7 @@ footer ul li {
 
     .activity_picture {
         max-width: 100vw;
-        max-height: 250px;
+        height: 220px;
     }
 
     .legend {
@@ -1002,7 +965,7 @@ footer ul li {
 
 /******************** TABLETS *******************/
 
-@media all and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 581px) and (max-width: 768px) {
 
     /****** TABLETS HEADER *******/
     
@@ -1243,7 +1206,7 @@ footer ul li {
     }
 
     .popular_picture {
-        max-height: 180px;
+        max-height: auto;
     }
 
     #popular-1 {
@@ -1263,6 +1226,10 @@ footer ul li {
 
     .popular_details {
         padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .note_popular {
+        margin-top: 0;
     }
 
     .activities {
