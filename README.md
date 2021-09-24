@@ -2,7 +2,7 @@
 
 ## Mission ##
 
-* Mock-up website integration (mobile and desktop).
+* Mock-up website integration (mobile and desktop). Activity : online booking flat company.
 * Responsive Design.
 * HTML CSS
 
